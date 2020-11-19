@@ -7,13 +7,9 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class SearchResults {
+  public final ElementsCollection found = $$("#ires .g");
 
-  // Elements
-  public ElementsCollection found = $$("#ires .g");
-
-  // Actions
   public SelenideElement getResult(int index) {
     return found.get(index);
   }
-
 }

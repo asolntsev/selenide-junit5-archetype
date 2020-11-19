@@ -20,7 +20,12 @@ or with alternate package
 
 The archetype is not released as often as Selenide, you can use the newest version of Selenide ![last version](https://img.shields.io/maven-central/v/com.codeborne/selenide.svg) when generating:
 
-```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dselenide_version=4.12.3```
+```
+mvn archetype:generate -B \
+  -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype \ 
+  -DgroupId=com.example -DartifactId=ui-tests \
+  -Dselenide_version=5.15.1
+```
 
 ### Content of the project
 
@@ -57,12 +62,12 @@ In Safari (Mac OS only, enable *Allow remote connections* option in Safari Devel
 
 ```mvn test -Dselenide.browser=safari```
 
-## Developers/Contributers
+## Developers/Contributors
 
 To build and install locally 
 
 ```mvn install```
 
-To deploy to Maven Central (only authorized contributers, requires GPG certificate and **settings.xml** configuration)
+To deploy to Maven Central (only authorized contributors, requires GPG certificate and **settings.xml** configuration)
 
 ```mvn deploy```
